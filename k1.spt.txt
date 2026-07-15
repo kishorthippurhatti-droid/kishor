@@ -1,6 +1,7 @@
-whellcom to gubbi
-git init
-git clone <repository-url>
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-git config --list
+import subprocess
+
+repo_url = input("Enter GitHub repository URL: ")
+
+subprocess.run(["git", "clone", repo_url])
+
+print("Repository cloned successfully!"
